@@ -1,0 +1,399 @@
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    background-color: #000;
+    margin: 0 0 60px 0;
+
+    a {
+        color: #fff;
+    }
+
+    h1 {
+        float: left;
+        position: relative;
+        height: 65px;
+        width: 250px;
+        margin: 0 50px 0 0;
+
+        a {
+            display: block;
+            background: url("../images/logo.png") no-repeat left top;
+            text-indent: -9999px;
+            width: 198px;
+            height: 34px;
+            margin: 15px 0 0 0;
+        }
+
+        span {
+            position: absolute; right: 0; bottom: -9px;
+            background-color: #2d80d0;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 1px 5px;
+            border-radius: 1px;
+        }
+    }
+
+    nav {
+        line-height: 65px;
+        float: left;
+
+        li {
+            float: left;
+            margin: 0 50px 0 0;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            a:hover {
+                color: shade(#fff, 20%);
+            }
+        }
+    }
+
+    .social-icons {
+        float: right;
+        margin: 16px 0 0 0;
+
+        li {
+            margin: 0 0 0 10px;
+        }
+    }
+
+    .notice {
+        clear: both;
+        background: tint($yellow, 80%);
+
+        p {
+            background:  url("../images/smile.png") no-repeat left center;
+            padding: 30px 0 30px 104px;
+            color: tint($gray, 40%);
+        }
+    }
+}
+
+.main {
+    float: left;
+    margin: 0 0 30px 0;
+    width: 660px;
+
+    .post {
+        margin: 0 0 30px 0;
+
+        header {
+
+            h1, h2 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1.15;
+                margin: 0 0 10px 0;
+
+                a {
+                    color: $gray;
+                }
+            }
+
+            p {
+                color: tint($gray, 60%);
+                margin: 0 0 30px 0;
+            }
+        }
+
+        .content {
+            margin: 0 0 30px 0;
+        }
+
+        footer {
+            border-top: 1px dashed shade(#fff, 20%);
+            border-bottom: 1px dashed shade(#fff, 20%);
+            padding: 10px;
+            line-height: 24px;
+            color: tint($gray, 40%);
+
+            strong {
+                font-weight: 600;
+            }
+
+            .add-comment {
+                float: right;
+                background-color: tint($blue, 70%);
+                padding: 0 10px;
+                color: $gray;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-shadow: 1px 1px #fff;
+                @include border-radius(3px);
+
+                &:hover {
+                    background-color: tint($blue, 60%);
+                }
+            }
+        }
+    }
+
+    .content {
+        @include clearfix;
+
+        h2 {
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        h2, h3, p {
+            margin: 0 0 30px 0;
+        }
+
+        ul, ol {
+            list-style-type: disc;
+            margin: 30px 0;
+            padding: 0 0 0 30px;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+
+            ol, ul {
+                margin: 15px 0;
+            }
+
+        }
+
+        blockquote {
+            margin: 30px 0 30px 30px;
+            font-style: italic;
+            color: tint($gray, 40%);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 0 30px 0;
+
+            &.alignleft {
+                float: left;
+                margin: 30px 30px 30px 0;
+            }
+
+            &.alignright {
+                float: right;
+                margin: 30px 0 30px 30px;
+            }
+        }
+    }
+
+    .comments-title {
+        clear: both;
+        border-top: 1px dashed shade(#fff, 20%);
+        margin: 0 0 30px 0;
+        padding: 30px 0 0 0;
+        font-size: 18px;
+        color: tint($gray, 60%);
+        font-weight: 400;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    .comments {
+
+        li {
+            padding: 0 0 30px 70px;
+            position: relative;
+        }
+
+        .author {
+            margin: 0 0 10px 0;
+
+            img {
+                position: absolute; left: 0; top: 0;
+            }
+
+            cite {
+                color: #6fc1ce;
+            }
+
+            time {
+                display: block;
+                font-size: 11px;
+                line-height: 1.5em;
+            }
+        }
+    }
+
+    .comments-form {
+
+        p {
+            margin: 0 0 20px 0;
+            clear: both;
+
+            &.inline {
+                float: left;
+                clear: none;
+                margin: 0 15px 20px 0;
+
+                input {
+                    width: 182px;
+                }
+            }
+
+            &.last {
+                margin-right: 0;
+            }
+        }
+
+        textarea {
+            width: 632px;
+            height: 168px;
+            display: block;
+        }
+    }
+}
+
+.sidebar {
+    float: right;
+    margin: 0 0 30px 0;
+    width: 220px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0 0 10px 0;
+        border-bottom: 1px dashed shade(#fff, 20%);
+        margin: 0 0 10px 0;
+    }
+
+    .button-rss {
+        height: 34px;
+        line-height: 34px;
+        background-color: #f99737;
+        display: block;
+        margin: 0 0 30px 0;
+
+        &:hover {
+            background-color: shade(#f99737, 10%);
+        }
+
+        &:before {
+            content: "";
+            background: url("../images/rss-icon.png") no-repeat center center;
+            width: 14px;
+            height: 34px;
+            float: right;
+        }
+    }
+
+    .search {
+        margin: 0 0 30px 0;
+
+        input {
+            width: 192px;
+        }
+    }
+
+    .categories {
+        margin: -10px 0 30px 0;
+
+        li {
+            border-bottom: 1px dashed shade(#fff, 20%);
+
+            a {
+                display: block;
+                padding: 10px 0;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .newsletter {
+        margin: 0 0 30px 0;
+
+        p {
+            font-size: 12px;
+            color: tint($gray, 60%);
+            margin: 0 0 10px 0;
+        }
+
+        input {
+            width: 192px;
+        }
+    }
+}
+
+.footer {
+    @include clearfix;
+    clear: both;
+    padding: 60px 0;
+    background-color: #000;
+    font-size: 12px;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: shade(#fff, 40%);
+        }
+    }
+
+    nav {
+        float: left;
+        width: 480px;
+        line-height: 1.75;
+        margin: 0 0 60px 0;
+
+        ul {
+            float: left;
+            width: 160px;
+        }
+    }
+
+    .phone {
+        float: right;
+        width: 300px;
+        color: #fff;
+
+        span {
+            display: block;
+            font-size: 28px;
+        }
+
+        a {
+            border-bottom: 1px solid shade(#fff, 60%);
+        }
+
+        &:before {
+            content: "";
+            background: url("../images/contact-icon.png") no-repeat left top;
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+    }
+
+    .copyright {
+        clear: left;
+        float: left;
+        color: tint($gray, 20%);
+        font-size: 12px;
+        font-weight: 600;
+        background: url("../images/logo.png") no-repeat left top;
+        padding: 0 40px 0 220px;
+    }
+}
