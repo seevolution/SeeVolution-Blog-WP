@@ -25,15 +25,14 @@
         <nav>
             <ul>
                 <li><a href="http://seevolution.com/">Seevolution home</a></li>
-                <li><a href="#">Support and contact</a></li>
+                <li><a href="http://wiki.seevolution.com/index.php/Main_Page">Support and contact</a></li>
             </ul>
         </nav>
         <div class="social-icons">
             <ul>
-                <li><a class="rss" href="#">Rss</a></li>
-                <li><a class="facebook" href="#">Facebook</a></li>
-                <li><a class="twitter" href="#">Twitter</a></li>
-                <li><a class="google" href="#">Google</a></li>
+                <li><a class="facebook" href="http://www.facebook.com/seevolution">Facebook</a></li>
+                <li><a class="twitter" href="http://www.twitter.com/seevolution">Twitter</a></li>
+                <li><a class="google" href="https://plus.google.com/107869771877375037960/posts">Google</a></li>
             </ul>
         </div>
     </div>
