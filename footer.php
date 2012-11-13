@@ -1,4 +1,3 @@
-
     <?php get_sidebar(); ?>
 
 </div>
@@ -31,9 +30,9 @@
             3800 Highland Ave. Suite 100 Manhattan Beach, CA 90266
         </div>
         <ul class="social-icons">
-            <li><a class="facebook" href="#">Facebook</a></li>
-            <li><a class="twitter" href="#">Twitter</a></li>
-            <li><a class="google" href="#">Google+</a></li>
+            <li><a class="facebook" href="http://www.facebook.com/seevolution">Facebook</a></li>
+            <li><a class="twitter" href="http://www.twitter.com/seevolution">Twitter</a></li>
+            <li><a class="google" href="https://plus.google.com/107869771877375037960/posts">Google+</a></li>
         </ul>
     </div>
 </footer>
